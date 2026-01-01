@@ -1,10 +1,23 @@
 #!/bin/bash
 
-sleep 1
+clear
 
-echo "__________________"
-echo "     WELCOME"
-echo "__________________"
+if command -v toilet >/dev/null 2>&1 && command -v lolcat >/dev/null 2>&1; then
+    toilet -f big -F border "Easy-Ping" | lolcat
+else
+    echo "=============================="
+    echo "         Easy-Ping"
+    echo "=============================="
+fi
+
+echo
+echo "Author : SOHAN ND"
+echo "Tool   : Network Scanner"
+echo "Mode   : Kali Linux"
+echo
+
+
+
 
 sleep 2
 
